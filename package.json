@@ -1,0 +1,25 @@
+{
+  "name": "jest-and-promises",
+  "version": "1.0.0",
+  "description": "Example how to explore jest and promises using jest.",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/htw-imi-wtat1/jest-and-promises.git"
+  },
+  "keywords": [
+    "jest",
+    "promises",
+    "tutorial",
+    "htw-berlin"
+  ],
+  "author": "Barne Kleinen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/htw-imi-wtat1/jest-and-promises/issues"
+  },
+  "homepage": "https://github.com/htw-imi-wtat1/jest-and-promises#readme"
+}
