@@ -42,6 +42,21 @@ for the first example. Of course you would rather use map than a loop to create
 one collection out of the other, [Using Jest Map Test](01_exploring_apis_with_tests/03_using_jest_map.test.js) plays around with this (Note that [Object.keys()](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) only lists the objects own attributes, for..in
 also loops through the prototypes properties)
 
+## Testing Async Code
+
+There are a couple of traps in testing async code. 
+Jest has a good documentation about that, 
+[Testing Asynchronous Code](https://jestjs.io/docs/en/asynchronous).
+
+[09_failing_tests](09_failing_tests) contains some examples of 
+tests failing due to synchronization issues. run them with
+
+    npm run failing
+
+or individually with 
+    
+    jest --config failing.config.js 09_failing_tests/forgetting_to_call_done.failingtest.js
+    
 # Promises
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises

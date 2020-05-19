@@ -4,7 +4,8 @@
   "description": "Example how to explore jest and promises using jest.",
   "main": "main.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "failing": "jest --config=failing.config.js"
   },
   "repository": {
     "type": "git",
