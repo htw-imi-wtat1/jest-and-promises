@@ -1,3 +1,6 @@
+// run with
+// jest --config failing.config.js
+
 const myPromise = async (x) => {
     return `promise ${x}`
 }
