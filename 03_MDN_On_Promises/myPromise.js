@@ -12,9 +12,7 @@ function myAsynchronousFunction(callLog, returnValue, callback, failWith) {
         throw result
     }
 }
-const myExecutor = function (resolutionFunc, rejectionFunc){
 
-}
 const myPromise = function createPromise(callLog,resolveWith,rejectWith) {
     return new Promise((resolutionFunc, rejectionFunc) => {
         try {
@@ -27,27 +25,7 @@ const myPromise = function createPromise(callLog,resolveWith,rejectWith) {
     })
 }
 
-const myPromise2 = function createPromise(callLog,resolveWith,rejectWith){
-
-    const promiseShouldSucceed = (rejectWith === undefined)
-    let resrej
-    if (promiseShouldSucceed) {
-        resrej = "Promise resolve: " + resolveWith
-    }  else{
-        resrej = "Promise reject: " + rejectWith
-    }
-    callLog.push(resrej)
-    return new Promise((resolutionFunc, rejectionFunc) => {
-        if (promiseShouldSucceed) {
-            myAsynchronousFunction(callLog,resolveWith,resolutionFunc)
-        }else {
-            myAsynchronousFunction(callLog,resolveWith,rejectionFunc,resolveWith)
-        }
-    })
-}
-//const myPromise = new Promise(executor)
 module.exports = {
     myAsynchronousFunction: myAsynchronousFunction,
-    myExecutor: myExecutor,
     myPromise: myPromise
 }
